@@ -1,0 +1,192 @@
+import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
+
+
+class Plastico extends StatelessWidget {
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: Scaffold(
+        backgroundColor: Colors.green[50],
+        body: ListView(
+          children: [
+            Padding(padding: EdgeInsets.only(top: 30)),
+            Padding(padding: const EdgeInsets.symmetric(horizontal: 12),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: [
+                  Row(
+                    children: [
+                      Image.asset(
+                        'assets/images/icons/plastic.png', width: 80,
+                        height: 80,
+                      ),
+                      Padding(padding: EdgeInsets.only(left: 20),),
+                      Text("Plástico", style: TextStyle(
+                          color: Colors.green[900], fontSize: 23),),
+                      Padding(padding: EdgeInsets.only(left: 160),),
+                      Icon(
+                        Icons.arrow_back, size: 35, color: Colors.green[900],)
+                    ],
+                  ),
+                ],
+              ),
+            ),
+            Padding(padding: EdgeInsets.only(top: 40)),
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 12),
+              child: Row(
+                children: [
+                  Expanded(
+                      child: Container(
+                          height: 40,
+                          color: Colors.green[200],
+                          child: Center(
+                              child: Text("Recicláveis ",
+                                style: TextStyle(color: Colors.white, fontSize: 20,),
+                                textAlign: TextAlign.center,)
+                          )
+                      )
+                  ),
+                ],
+              ),
+            ),
+            Row(
+              children: [
+                Expanded(
+                    child: Padding(
+                      padding: EdgeInsets.all(10),
+                      child: Stack(
+                        alignment: Alignment.center,
+                        children: [
+                          Image.asset('assets/images/icons/water.png', width: 100, height: 100),
+                          Padding(padding: EdgeInsets.only(top: 140), child: Center(
+                              child: Text("Garrafas PET",
+                                style: TextStyle(
+                                    fontSize: 15, color: Colors.black45
+                                ),
+                                textAlign: TextAlign.center,
+                              )
+                          ))
+                        ],
+                      ),
+                    )
+                ),
+                Expanded(
+                    child: Padding(
+                      padding: EdgeInsets.all(10),
+                      child: Stack(
+                        alignment: Alignment.center,
+                        children: [
+                          Image.asset('assets/images/icons/cleaning.png', width: 100, height: 100),
+                          Padding(padding: EdgeInsets.only(top: 140), child: Center(
+                              child: Text("Produtos de limpeza",
+                                style: TextStyle(
+                                    fontSize: 15, color: Colors.black45
+                                ),
+                                textAlign: TextAlign.center,
+                              )
+                          ))
+                        ],
+                      ),
+                    )
+                ),
+                Expanded(
+                    child: Padding(
+                      padding: EdgeInsets.all(10),
+                      child: Stack(
+                        alignment: Alignment.center,
+                        children: [
+                          Image.asset('assets/images/icons/plastic-bag.png', width: 100, height: 100),
+                          Padding(padding: EdgeInsets.only(top: 140), child: Center(
+                              child: Text("Sacolas de plástico",
+                                style: TextStyle(
+                                    fontSize: 15, color: Colors.black45
+                                ),
+                                textAlign: TextAlign.center,
+                              )
+                          ))
+                        ],
+                      ),
+                    )
+                ),
+              ],
+            ),
+            Row(
+              children: [
+                Expanded(
+                    child: Padding(
+                      padding: EdgeInsets.all(10),
+                      child: Stack(
+                        alignment: Alignment.center,
+                        children: [
+                          Image.asset('assets/images/icons/tubes.png', width: 100, height: 100),
+                          Padding(padding: EdgeInsets.only(top: 140), child: Center(
+                              child: Text("Tubos e canos",
+                                style: TextStyle(
+                                    fontSize: 15, color: Colors.black45
+                                ),
+                                textAlign: TextAlign.center,
+                              )
+                          ))
+                        ],
+                      ),
+                    )
+                ),
+                Expanded(
+                    child: Padding(
+                      padding: EdgeInsets.all(10),
+                      child: Stack(
+                        alignment: Alignment.center,
+                        children: [
+                          Image.asset('assets/images/icons/soap.png', width: 100, height: 100),
+                          Padding(padding: EdgeInsets.only(top: 140), child: Center(
+                              child: Text("Produtos de higiene",
+                                style: TextStyle(
+                                    fontSize: 15, color: Colors.black45
+                                ),
+                                textAlign: TextAlign.center,
+                              )
+                          ))
+                        ],
+                      ),
+                    )
+                ),
+                Expanded(
+                    child: Padding(
+                      padding: EdgeInsets.all(10),
+                      child: Stack(
+                        alignment: Alignment.center,
+                        children: [
+                          Image.asset('assets/images/icons/6-ps.png', width: 100, height: 100),
+                          Padding(padding: EdgeInsets.only(top: 140), child: Center(
+                              child: Text("Isopor",
+                                style: TextStyle(
+                                  fontSize: 15, color: Colors.black45
+                                ),
+                                textAlign: TextAlign.center,
+                              )
+                          ))
+                        ],
+                      ),
+                    )
+                ),
+              ],
+            ),
+            Padding(padding: EdgeInsets.only(top: 95)),
+            Column(
+              children: [
+                //Icon(Icons.lock_clock, size: 30, color: Colors.green[900],),
+                Text("Tempo de decomposição:", style: TextStyle(color: Colors.black, fontSize: 20,),),
+                Icon(Icons.arrow_drop_down, size: 40, color: Colors.red,),
+                Text("Mais de 400 anos", style: TextStyle(color: Colors.black, fontSize: 18),),
+              ],
+            )
+          ],
+        ),
+      ),
+    );
+  }
+}
