@@ -1,3 +1,4 @@
+import 'package:eureciclo_app/mapa/ecopontos.dart';
 import 'package:eureciclo_app/separacao_residual/separacao.metal.dart';
 import 'package:eureciclo_app/separacao_residual/separacao.papel.dart';
 import 'package:eureciclo_app/separacao_residual/separacao.plastico.dart';
@@ -13,9 +14,9 @@ import 'package:eureciclo_app/reciclaveis/vidro.dart';
 import 'package:eureciclo_app/reciclaveis/metal.dart';
 import 'package:eureciclo_app/separacao_residual/separacao.residual.dart';
 
-void main(){
-  runApp(SeparacaoMetal(
-  ));
+import 'home.page.dart';
+import 'residuos.reciclaveis.dart';
+
+void main() {
+  runApp(Ecopontos());
 }
-
-
